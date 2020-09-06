@@ -1,5 +1,5 @@
 # alttaki belgeyi olustur, github repona "git add ." ve "git commit -m 'deneme'" ve "git push" ile github repona gonder
-# github repondan wget ile EC2 instance a cek ve run et ve ardindan connection to webpage
+# github repondan wget ile EC2 instance a cek, run et ve ardindan connection to webpage
 
 from flask import Flask
 

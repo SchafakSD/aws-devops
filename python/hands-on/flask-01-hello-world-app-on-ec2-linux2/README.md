@@ -1,3 +1,18 @@
+OZET: Alttaki komutlari EC2 instance uzerinde calistir.
+
+ssh -i .ssh/call-training.pem ec2-user@ec2-3-15-183-78.us-east-2.compute.amazonaws.com
+sudo yum update -y
+sudo yum install python3 -y
+python3 --version
+sudo pip3 install flask
+pip3 list
+# github repona lokalde olusturdugun hello-world-app.py belgesini ekle (git add/comment/push) ve github repona gonderdigin hello-world-app.py belgesinin raw adresini kopyala
+wget https://raw.githubusercontent.com/SchafakSD/aws-devops/master/python/hands-on/flask-01-hello-world-app-on-ec2-linux2/EC2-denemeleri/hello-world-app.py
+ls komutu ile EC2 instance a gelip gelmedigini kontrol et
+sudo python3 hello-world-app.py
+EC2 adresine webpage uzerinden baglan ve Hello World! yazisini gor.
+
+
 # Hands-on Flask-01 : Creating First Flask Application - Hello World
 
 Purpose of the this hands-on training is to give the students quick introductory knowledge of how to create a Flask web application on Amazon Linux 2 EC2 instance.
@@ -160,7 +175,7 @@ git push origin master
 - Download the web application file from GitHub repo.
 
 ```bash
-wget https://raw.githubusercontent.com/callahan-cw/clarusway-python-workshop/master/hands-on/flask-01-hello-world-app-on-ec2-linux2/hello-world-app.py
+wget https://raw.githubusercontent.com/SchafakSD/aws-devops/master/python/hands-on/flask-01-hello-world-app-on-ec2-linux2/EC2-denemeleri/hello-world-app.py
 ```
 
 - Run the web application
