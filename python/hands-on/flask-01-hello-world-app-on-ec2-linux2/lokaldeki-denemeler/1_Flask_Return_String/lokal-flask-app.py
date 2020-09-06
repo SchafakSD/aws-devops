@@ -11,7 +11,7 @@ def head():
 
 @app.route("/second")
 def second():
-    return "This is seocnd page"
+    return "This is second page"
 
 
 @app.route("/third/subthird")

@@ -168,6 +168,7 @@ wget https://raw.githubusercontent.com/callahan-cw/clarusway-python-workshop/mas
 ```bash
 sudo python3 hello-world-app.py
 ```
+Not: hello-world-app.py icerisinde her degisiklik yapildiginda bu kodu EC2 da tekrar calistirmalisin.
 
 - Connect the Hello World application from the web browser
 
