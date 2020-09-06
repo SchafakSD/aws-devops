@@ -6,7 +6,7 @@ sudo yum install python3 -y
 python3 --version
 sudo pip3 install flask
 pip3 list
-# github repona lokalde olusturdugun hello-world-app.py belgesini ekle (git add/comment/push) ve github repona gonderdigin hello-world-app.py belgesinin raw adresini kopyala
+github repona lokalde olusturdugun hello-world-app.py belgesini ekle (git add/comment/push) ve github repona gonderdigin hello-world-app.py belgesinin raw adresini kopyala
 wget https://raw.githubusercontent.com/SchafakSD/aws-devops/master/python/hands-on/flask-01-hello-world-app-on-ec2-linux2/EC2-denemeleri/hello-world-app.py
 ls komutu ile EC2 instance a gelip gelmedigini kontrol et
 sudo python3 hello-world-app.py
