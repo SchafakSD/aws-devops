@@ -204,7 +204,7 @@ def greet(name):
 # Ancak parantez icinde toplam=number1+number2 yazarsak ayni parantez icinde oldugu için bunu hesaplayamaz.
 # nmber1, number2 degiskenlerini return den once tanimlarsak sorun olmaz.
 
-# Create a function named list10 which creates a list counting from 1 to 100 within `list100.html` 
+# Create a function named list100 which creates a list counting from 1 to 100 within `list100.html` 
 # and assign to the route of ('/list100')
 # Not: list100.html e gidecek ve orada for dongusu calistirip sonuclari yazdiracak
 @app.route('/list100')
@@ -228,10 +228,58 @@ if __name__ == '__main__':
 ```
 
 - Write a template html file named `greet.html` which takes `name` as parameter under `templates` folder 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello, {{ isim }}</h1> 
+    <h1>Welcome to my Greeting Page</h1>
+</body>
+</html>
 
 - Write a template html file named `list100.html` which shows a list counting from 1 to 100 under `templates` folder 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List100</title>
+</head>
+<body>
+    <h1>Created 100 List Items</h1>
+    <ul>
+    {% for x in range(1,101) %}
+    <li>List item {{ x }}</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
 
 - Write a template html file named `evens.html` which shows a list of even numbers from 1 to 10 under `templates` folder 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Evens</title>
+</head>
+<body>
+    <h1>Showing Even Number from 1 to 10</h1>
+    <ul>
+        {% for x in range(1,11) %}
+            {% if x%2==0 %}
+            <li>Number {{ x }} is even</li>
+            {% endif %}
+        {% endfor %}
+
+    </ul>
+    
+</body>
+</html>
 
 - Create a folder named `static` under `hands-on/flask-02-handling-routes-and-templates-on-ec2-linux2` folder and create a text file named `mytext.txt` with *This is a text file in static folder* content.
 
@@ -240,14 +288,24 @@ if __name__ == '__main__':
 - Push `app.py`, `greet.html`, `list10.html`, `evens.html`, and `mytext.txt` to remote repo `clarusway-python-workshop` on GitHub.
 
 ## Part 4 - Run the Hello World App on EC2 Instance
+- EC2 Instance a baglaninca yapilacaklar:
+1 sudo yum update -y
+2 sudo yum install python3
+3 python3 --version
+4 sudo pip3 install flask
+5 pip3 list
 
 - Download the web application file from GitHub repo.
+wget
 
 - Run the web application
 
+
 - Connect the route handling and templating web application from the web browser and try every routes configured
 
+
 - Open the static file `mytext.txt` context from the web browser
+
 
 - Connect the route handling and templating web application from the terminal with `curl` command.
 
