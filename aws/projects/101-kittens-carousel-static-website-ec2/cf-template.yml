@@ -1,7 +1,7 @@
 AWSTemplateFormatVersion: 2010-09-09
 Description: This template creates an EC2 instance to run static web site with Apache web server
 Resources:
-  MustafaCFInstance: 
+  AhmetCFInstance: 
     Type: AWS::EC2::Instance
     Properties:
       ImageId: ami-0c94855ba95c71c99
