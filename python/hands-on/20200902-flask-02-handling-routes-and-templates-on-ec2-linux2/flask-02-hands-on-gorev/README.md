@@ -1,4 +1,4 @@
-OZET: 
+OZET: 2020-09-02
 
 - Part-2: Alttaki komutlari EC2 instance uzerinde calistir.
 - ssh -i .ssh/call-training.pem ec2-user@ec2-3-15-183-78.us-east-2.compute.amazonaws.com
@@ -7,13 +7,18 @@ OZET:
 - python3 --version
 - sudo pip3 install flask
 - pip3 list
-- Part-3: Lokalde helloworld-app.py belgesini olustur.
-- Part-4: Github repona lokalde olusturdugun hello-world-app.py belgesini ekle (git add/comment/push) ve Github repona gonderdigin hello-world-app.py belgesinin raw adresini kopyala
-- wget https://raw.githubusercontent.com/SchafakSD/aws-devops/master/python/hands-on/flask-01-hello-world-app-on-ec2-linux2/EC2-denemeleri/hello-world-app.py
-- ls komutu ile EC2 instance a gelip gelmedigini kontrol et
-- sudo python3 hello-world-app.py
-- EC2 adresine webpage uzerinden baglan ve Hello World! yazisini gor.
 
+- Part-3: Github repona lokalde olusturdugun app.py belgesini ekle (git add/comment/push) ve Github repona gonderdigin app.py belgesinin raw adresini kopyala
+- wget https://raw.githubusercontent.com/SchafakSD/aws-devops/master/python/hands-on/flask-02-handling-routes-and-templates-on-ec2-linux2/flask-02-hands-on-gorev/app.py
+- ls komutu ile EC2 instance a app.py nin gelip gelmedigini kontrol et
+- mkdir templates
+- cd templates
+- templates klasoru altina tek tek evens.html, list100.html ve greet.html raw uzantilarini wget ile aliyoruz.
+- https://raw.githubusercontent.com/SchafakSD/aws-devops/master/python/hands-on/flask-02-handling-routes-and-templates-on-ec2-linux2/flask-02-hands-on-gorev/templates/evens.html
+- https://raw.githubusercontent.com/SchafakSD/aws-devops/master/python/hands-on/flask-02-handling-routes-and-templates-on-ec2-linux2/flask-02-hands-on-gorev/templates/greet.html
+- https://raw.githubusercontent.com/SchafakSD/aws-devops/master/python/hands-on/flask-02-handling-routes-and-templates-on-ec2-linux2/flask-02-hands-on-gorev/templates/list100.html
+- sudo python3 app.py
+- EC2 adresine webpage uzerinden baglan ve gor.
 
 # Hands-on Flask-02 : Handling Routes and Templates with Flask Web Application
 
@@ -288,12 +293,6 @@ if __name__ == '__main__':
 - Push `app.py`, `greet.html`, `list10.html`, `evens.html`, and `mytext.txt` to remote repo `clarusway-python-workshop` on GitHub.
 
 ## Part 4 - Run the Hello World App on EC2 Instance
-- EC2 Instance a baglaninca yapilacaklar:
-1 sudo yum update -y
-2 sudo yum install python3
-3 python3 --version
-4 sudo pip3 install flask
-5 pip3 list
 
 - Download the web application file from GitHub repo.
 wget

@@ -1,4 +1,4 @@
-OZET: 
+OZET: 2020-08-26
 
 - Part-2: Alttaki komutlari EC2 instance uzerinde calistir.
 - ssh -i .ssh/call-training.pem ec2-user@ec2-3-15-183-78.us-east-2.compute.amazonaws.com
@@ -10,7 +10,7 @@ OZET:
 - Part-3: Lokalde helloworld-app.py belgesini olustur.
 - Part-4: Github repona lokalde olusturdugun hello-world-app.py belgesini ekle (git add/comment/push) ve Github repona gonderdigin hello-world-app.py belgesinin raw adresini kopyala
 - wget https://raw.githubusercontent.com/SchafakSD/aws-devops/master/python/hands-on/flask-01-hello-world-app-on-ec2-linux2/EC2-denemeleri/hello-world-app.py
-- ls komutu ile EC2 instance a gelip gelmedigini kontrol et
+- ls komutu ile EC2 instance a app.py nin gelip gelmedigini kontrol et
 - sudo python3 hello-world-app.py
 - EC2 adresine webpage uzerinden baglan ve Hello World! yazisini gor.
 
